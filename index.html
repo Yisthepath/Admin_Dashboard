@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <div class="header-top">
+                <div class="search-bar">
+                    <form action="" method="post">
+                        <label for="search-bar">
+                            <img src="./SVGs/search.svg" class="search-logo">
+                        </label>
+                    <input type="text" name="search-bar" id="search-bar"></form>
+                </div>
+                <div class="notification">
+                    <img src="./SVGs/notification.svg" class="notification-logo">
+                    <img src="./images/elisa_nishikawa.jpg" alt="the user's profile picture" class="current-user-picture-1">
+                    <p class="current-user-name">
+                        Elisa Nishikawa
+                    </p>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="bottom-left">
+                    <img src="./images/elisa_nishikawa.jpg" alt="the user's profile picture" class="current-user-picture-2">
+                    <div class="welcome-message">
+                        <p>Hi there,</p>
+                        <p class="user-name">Elisa Nishikawa (@elisa)</p>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="dashboard">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" fill="white" class="dashboard-mask" /></svg>
+                <p class="dashboard-paragraph">Dashboard</p>
+            </div>
+            <div class="first-links">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" fill="white" class="home-logo" /></svg>
+                    <p>Home</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M16.5,16.25C16.5,14.75 13.5,14 12,14C10.5,14 7.5,14.75 7.5,16.25V17H16.5M12,12.25A2.25,2.25 0 0,0 14.25,10A2.25,2.25 0 0,0 12,7.75A2.25,2.25 0 0,0 9.75,10A2.25,2.25 0 0,0 12,12.25Z" fill="white" class="profile-logo" /></svg>
+                    <p>Profile</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2M20 16H5.2L4 17.2V4H20V16Z" fill="white" class="messages-logo" /></svg>
+                    <p>Messages</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20C16.4 20 20 16.4 20 12S16.4 4 12 4 4 7.6 4 12 7.6 20 12 20M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2M17 11.5V13H11V7H12.5V11.5H17Z" fill="white" class="history-logo"/></svg>
+                    <p>History</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15,7H20.5L15,1.5V7M8,0H16L22,6V18A2,2 0 0,1 20,20H8C6.89,20 6,19.1 6,18V2A2,2 0 0,1 8,0M4,4V22H20V24H4A2,2 0 0,1 2,22V4H4Z" fill="white" class="tasks-logo" /></svg>
+                    <p>Tasks</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" fill="white" class="communities-logo" /></svg>
+                    <p>Communities</p>
+                </div>
+            </div>
+            <div class="second-links">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10M11.25,4L10.88,6.61C9.68,6.86 8.62,7.5 7.85,8.39L5.44,7.35L4.69,8.65L6.8,10.2C6.4,11.37 6.4,12.64 6.8,13.8L4.68,15.36L5.43,16.66L7.86,15.62C8.63,16.5 9.68,17.14 10.87,17.38L11.24,20H12.76L13.13,17.39C14.32,17.14 15.37,16.5 16.14,15.62L18.57,16.66L19.32,15.36L17.2,13.81C17.6,12.64 17.6,11.37 17.2,10.2L19.31,8.65L18.56,7.35L16.15,8.39C15.38,7.5 14.32,6.86 13.12,6.62L12.75,4H11.25Z" fill="white" class="setings-logo" /></svg>
+                    <p>Settings</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 18H13V16H11V18M12 6C9.8 6 8 7.8 8 10H10C10 8.9 10.9 8 12 8S14 8.9 14 10C14 12 11 11.8 11 15H13C13 12.8 16 12.5 16 10C16 7.8 14.2 6 12 6M19 5V19H5V5H19M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z" fill="white" class="support-logo" /></svg>
+                    <p>Support</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18L5,6.3V11.22C5,15.54 8.25,20 12,21M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9" fill="white" class="privacy-logo" /></svg>
+                    <p>Privacy</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="projects-container">
+                <p class="section-header">Your Projects</p>
+                <div class="projects">
+                    <div class="project-1">
+                        <p class="project-1-header">Super Cool Project</p>
+                        <p class="project-1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio neque similique laborum quo culpa. Ab, laboriosam excepturi consequuntur laborum eum labore molestias, quas omnis perferendis qui, temporibus commodi repellat eaque.</p>
+                    </div>
+                    <div class="project-2">
+                        <p class="project-2-header">Less Cool Project</p>
+                        <p class="project-2-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis excepturi alias minima temporibus dolorem error quaerat consectetur!</p>
+                    </div>
+                    <div class="project-3">
+                        <p class="project-3-header">Impossible App</p>
+                        <p class="project-3-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure modi vero quisquam harum facilis cum incidunt est eos esse quam beatae, nihil, eaque, deserunt ex. Eos dicta nisi modi pariatur!</p>
+                    </div>
+                    <div class="project-4">
+                        <p class="project-4-header">Easy Peasy App</p>
+                        <p class="project-4-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id adipisci sapiente deserunt soluta exercitationem quae sint odio beatae? Quod fuga natus reprehenderit id ipsum maxime perspiciatis eos optio dicta quos?</p>
+                    </div>
+                    <div class="project-5">
+                        <p class="project-5-header">Ad Blocker</p>
+                        <p class="project-5-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, expedita amet? Culpa, ab, recusandae aliquam expedita labore doloremque iste natus corporis iure ducimus reiciendis maxime reprehenderit ut cupiditate hic facilis!</p>
+                    </div>
+                    <div class="project-6">
+                        <p class="project-6-header">Money Maker</p>
+                        <p class="project-6-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quisquam laboriosam, molestias, officia est quasi commodi, reprehenderit obcaecati magnam tempora delectus illum qui labore! Similique, nesciunt. Numquam totam delectus dolores.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-left">
+                <div class="announcements-container">
+                    <p class="section-header">Annoucements</p>
+                    <div class="announcements">
+                        <div class="announcement-1">
+                            <p class="anouncement-1-header">Site Maintenance</p>
+                            <p class="anouncement-1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eos commodi eveniet soluta non blanditiis.</p>
+                        </div>
+                        <div class="announcement-2">
+                            <p class="anouncement-2-header">Community Share Day</p>
+                            <p class="anouncement-2-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae optio dignissimos, nostrum fugiat nesciunt!</p>
+                        </div>
+                        <div class="announcement-3">
+                            <p class="anouncement-3-header">Updated Privacy Policy</p>
+                            <p class="anouncement-3-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis officiis sint, est quos dicta reprehenderit quaerat dolore.</p>
+                        </div>
+                </div>
+                </div>
+                <div class="trending-container">
+                    <p class="section-header">Trending</p>
+                    <div class="trending-accounts">
+                        <div class="trending-account-1">
+                            <img src="./images/zuzanna_burke.jpg" class="trending-profile-image-1">
+                            <div class="account-info">
+                                <p class="user-name-1">@Zuzanna</p>
+                                <p class="project-description">World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="trending-account-2">
+                            <img src="./images/elisa_nishikawa.jpg" class="trending-profile-image-2">
+                            <div class="account-info">
+                                <p class="user-name-2">@elisa</p>
+                                <p class="project-description">Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="trending-account-3">
+                            <img src="./images/liam_hood.jpg" class="trending-profile-image-3">
+                            <div class="account-info">
+                                <p class="user-name-3">@liam</p>
+                                <p class="project-description">Life Changing App</p>
+                            </div>
+                        </div>
+                        <div class="trending-account-4">
+                            <img src="./images/owen_garcia.jpg" class="trending-profile-image-4">
+                            <div class="account-info">
+                                <p class="user-name-4">@owen</p>
+                                <p class="project-description">No Traffic Maker</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
